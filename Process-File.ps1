@@ -140,7 +140,8 @@ function Get-RuleType($currentServerName, $sourceServerName, $destinationServerN
 
 Write-Verbose "Starting the script"
 
-$serverList = Get-ServerList -ServerListFile "C:\code\AzureMigrate-Dependencies\serverList.csv"
+#$serverList = Get-ServerList -ServerListFile "C:\code\AzureMigrate-Dependencies\serverList.csv"
+$serverList = Get-ServerList -ServerListFile $ServerListFilePath
 
 #Write the header to the output file
 Write-Verbose "Writing the header to the output file"
